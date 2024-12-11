@@ -3,7 +3,7 @@ function App() {
   
   return (
     <>
-      <div>Snapurl</div>
+      <div className="text-2xl bg-red-200">Snapurl</div>
     </>
   )
 }
