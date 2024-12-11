@@ -1,9 +1,11 @@
+import Header from "@/components/header";
 import {Outlet} from "react-router-dom";
 
 const AppLayout = () => {
   return (
     <div>
       <main className="min-h-screen container">
+        <Header/>
         <Outlet />
       </main>
       <div className="p-10 text-center bg-lime-300 mt-10">

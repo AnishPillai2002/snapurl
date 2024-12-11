@@ -109,6 +109,8 @@
   }
 }
 
+* { border: 1px solid black; }
+
 @layer base {
   * {
     @apply border-border;
