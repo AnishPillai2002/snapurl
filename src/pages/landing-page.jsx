@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
   Accordion,
@@ -9,20 +9,42 @@ import {
 
 import { Input } from "@/components/ui/input"
 import { Button } from '@/components/ui/button'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const LandingPage = () => {
+
+
+  const [longUrl,setLongUrl]=useState();
+
+  const navigate= useNavigate();
+
+  //function to handle the submibited url
+  const handleShorten = (e) => {
+    e.preventDefault();
+
+    //if url is present
+    if(longUrl){
+      navigate(`/auth?createNew=${longUrl}`)
+    }else{
+      
+    }
+
+  }
+
   return (
     <div className="flex flex-col items-center bg-cover bg-center" style={{ backgroundImage: 'url("/bg.png")' }}>
       <h2 className="my-10 sm:my-16 text-3xl sm:text-6xl lg:text-7xl text-red text-center font-extrabold">
         The only URL Shortener <br /> you&rsquo;ll ever need! 👇
       </h2>
 
-      <form className='sm:h-14 flex flex-col sm:flex-row w-full md:w-2/4 gap-2'>
+      <form onSubmit={handleShorten} className='sm:h-14 flex flex-col sm:flex-row w-full md:w-2/4 gap-2'>
         <Input type="url" 
                 placeholder="Enter your url"
                 className="h-full flex-1 py-4 px-4"
+                value={longUrl}
+                onChange={(e)=>setLongUrl(e.target.value)}
         />
         <Button className="h-full" type="submit">Get your link!</Button>
       </form>
