@@ -9,5 +9,16 @@ export async function login({email, password}) {
     if (error) throw new Error(error.message);
   
     return data;
-  }
-  
+}
+
+
+//Function to fetch data of user from local storage who is currently logged in
+export async function getCurrentUser() {
+  const {data: session, error} = await supabase.auth.getSession();
+  if (!session.session) return null;
+
+  // const {data, error} = await supabase.auth.getUser();
+
+  if (error) throw new Error(error.message);
+  return session.session?.user;
+}

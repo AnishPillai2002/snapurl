@@ -19,6 +19,8 @@ import useFetch from '@/hooks/use-fetch'
 import { login } from '@/db/apiAuth'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 
+import { UrlState } from '@/context'
+
 const Longin = () => {
 
   const [errors,setErrors]=useState({});
@@ -83,11 +85,13 @@ const Longin = () => {
   const longLink=searchParam.get("createNew");
   const navigate=useNavigate();
 
+  const {fetchUser} =UrlState(); //function to fetch user detail
 
   useEffect(()=>{
     //if authentication is success then move to dashboard
     if(error===null && data){
       navigate(`/dashboard?${longLink?`createNew=${longLink}`:""}`);
+      fetchUser();
     }
   },[data,error]);
 
