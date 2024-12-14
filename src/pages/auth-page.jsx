@@ -1,20 +1,34 @@
-import React from 'react'
-import { useSearchParams } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Longin from '@/components/login';
 import Signup from '@/components/signup';
+import { UrlState } from '@/context';
 
 
 const AuthPage = () => {
   
-  const[searchParams]=useSearchParams();// used to read and manipulate the query parameters
+  const[searchParams] = useSearchParams();// used to read and manipulate the query parameters
+
+  const longLink = searchParams.get("createNew");
+
+  const navigate = useNavigate();
+
+  const {isAuthenticated,loading} = UrlState();
+
+  useEffect(() => {
+    if(isAuthenticated && !loading){
+      navigate(`/dashboard?${longLink?`createNew=${longLink}`:""}`);
+    }
+  },[isAuthenticated,loading]);
+
 
   return (
     <div className='mt-36 flex flex-col gap-10 items-center'>
       <h1 className='text-5xl font-extrabold'>
         {
-          searchParams.get("createNew")?"Before we continue, let's log you in.":"Login/Sign Up"
+          longLink?"Before we continue, let's log you in.":"Login/Sign Up"
         }    
       </h1>
 
