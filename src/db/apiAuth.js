@@ -33,7 +33,7 @@ export async function signUp({name,email,password,profile_pic}){
   if(storageError) throw new Error(storageError.message);
 
   //sign up
-  const {data,error}=await supabase.signUp({
+  const {data,error}=await supabase.auth.signUp({
     email,
     password,
     options:{
