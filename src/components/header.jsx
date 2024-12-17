@@ -16,7 +16,7 @@ import { LinkIcon, LogOut } from 'lucide-react'
 import { UrlState } from '@/context'
 import useFetch from '@/hooks/use-fetch'
 
-import {BeatLoader,BarLoader} from 'react-spinners'
+import {BarLoader} from 'react-spinners'
 import { logout } from '@/db/apiAuth'
 
 
@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <>
-    <nav className="py-4 flex justify-between items-center">
+    <nav className="py-4 px-9 flex justify-between items-center bg-lime-300">
         <Link to="/">
             <img src="/snapurl-logo.png" alt="snapurl-logo" className='h-16' />
         </Link>
@@ -51,7 +51,9 @@ const Header = () => {
                   <DropdownMenuSeparator />
                   <DropdownMenuItem>
                     <LinkIcon className='h-4 w-4'/>
-                    <span>My Links</span>
+                    <span onClick={()=>{
+                      navigate("/dashboard");
+                    }}>My Links</span>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="text-red-600">
                     <LogOut className="h-4 w-4"/>  
