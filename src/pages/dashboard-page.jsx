@@ -19,6 +19,7 @@ import { UrlState } from '@/context'
 import { getClicksForUrls } from '@/db/apiClicks'
 import Error from '@/components/error'
 import LinkCard from '@/components/link-card'
+import CreateLink from '@/components/create-link'
 
 const DashboardPage = () => {
 
@@ -74,9 +75,7 @@ const DashboardPage = () => {
         <h1 className='font-extrabold text-4xl'>
           My Links
         </h1>
-        <Button>
-          Create Link
-        </Button>
+        <CreateLink/>
       </div>
 
       <div className='relative'>
