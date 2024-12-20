@@ -168,7 +168,7 @@ const CreateLink = () => {
                     disabled={loading}
                     onClick={createNewLink}
                 >
-                    {loading ? <BeatLoader size={10} color="white" /> : "Create"}
+                {loading ? <BeatLoader size={10} color="white" /> : "Create"}
                 </Button>
                 </DialogFooter>
         </DialogContent>
