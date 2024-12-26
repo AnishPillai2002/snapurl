@@ -26,6 +26,7 @@
     "react-router": "^6.23.1",
     "react-router-dom": "^6.23.1",
     "react-spinners": "^0.15.0",
+    "recharts": "^2.15.0",
     "snapurl": "file:",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
