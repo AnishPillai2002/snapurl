@@ -1,12 +1,12 @@
-Here's a complete documentation template for the SnapURL link shortener React app:
+Here's a complete documentation template for the urlsnap link shortener React app:
 
 ---
 
-# SnapURL - Link Shortener Application
+# urlsnap - Link Shortener Application
 
 ## Overview
 
-SnapURL is a modern link-shortening application built with React, Tailwind CSS, Supabase, and other essential tools. The application allows users to shorten URLs, create custom short URLs, and generate QR codes for the shortened links. It includes an intuitive UI and seamless functionality.
+urlsnap is a modern link-shortening application built with React, Tailwind CSS, Supabase, and other essential tools. The application allows users to shorten URLs, create custom short URLs, and generate QR codes for the shortened links. It includes an intuitive UI and seamless functionality.
 
 ---
 
@@ -39,8 +39,8 @@ SnapURL is a modern link-shortening application built with React, Tailwind CSS, 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/snapurl.git
-   cd snapurl
+   git clone https://github.com/yourusername/urlsnap.git
+   cd urlsnap
    ```
 
 2. **Install Dependencies**
@@ -81,7 +81,7 @@ SnapURL is a modern link-shortening application built with React, Tailwind CSS, 
 
 ## License
 
-SnapURL is released under the MIT License.
+urlsnap is released under the MIT License.
 
 --- 
 

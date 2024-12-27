@@ -32,7 +32,7 @@ const Header = () => {
     <>
     <nav className="py-4 px-9 flex justify-between items-center bg-lime-300">
         <Link to="/">
-            <img src="/snapurl-logo.png" alt="snapurl-logo" className='h-16' />
+            <img src="/urlsnap-logo.png" alt="urlsnap-logo" className='h-16' />
         </Link>
 
         <div>

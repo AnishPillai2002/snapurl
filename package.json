@@ -1,5 +1,5 @@
 {
-  "name": "snapurl",
+  "name": "urlsnap",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -27,10 +27,10 @@
     "react-router-dom": "^6.23.1",
     "react-spinners": "^0.15.0",
     "recharts": "^2.15.0",
-    "snapurl": "file:",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "ua-parser-js": "^2.0.0",
+    "urlsnap": "file:",
     "yup": "^1.5.0"
   },
   "devDependencies": {
