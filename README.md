@@ -6,16 +6,29 @@ Here's a complete documentation template for the urlsnap link shortener React ap
 
 ## Overview
 
-urlsnap is a modern link-shortening application built with React, Tailwind CSS, Supabase, and other essential tools. The application allows users to shorten URLs, create custom short URLs, and generate QR codes for the shortened links. It includes an intuitive UI and seamless functionality.
+A modern, feature-rich URL shortener designed to simplify link sharing and tracking. With advanced analytics, QR code generation, and a sleek, responsive design, this tool empowers users to manage their links effortlessly.  
 
+🌐 [View the Project](https://urlsnap.netlify.app/) 
 ---
+## Features  
 
-## Features
+- **Custom URL Shortening**  
+  Users can create custom aliases for shortened URLs to make them more memorable.  
 
-- **Custom URL Shortening**: Users can provide custom aliases for shortened URLs.
-- **QR Code Generation**: Automatically generates QR codes for each shortened URL.
-- **Responsive Design**: Styled using Tailwind CSS and Radix UI for a modern, responsive interface.
-- **Powered by Supabase**: Manages data storage and user authentication.
+- **QR Code Generation**  
+  Automatically generates QR codes for every shortened URL, enabling easy sharing and access.  
+
+- **Responsive Design**  
+  Styled with **Tailwind CSS**, ensuring a modern and seamless user experience across devices.  
+
+- **Powered by Supabase**  
+  Utilizes **Supabase** for secure data storage and user authentication.  
+
+- **Link Analytics**  
+  - **Click Count**: Tracks the number of times a link is accessed.  
+  - **Device Insights**: Identifies the type of device (mobile, desktop, etc.) used to access the link.  
+  - **Geographical Data**: Provides the city where the link was opened, offering valuable location-based insights.  
+
 
 ---
 
@@ -32,6 +45,8 @@ urlsnap is a modern link-shortening application built with React, Tailwind CSS, 
 - **React-QRCode-Logo**: QR code generation.
 - **Yup**: Schema validation for forms.
 - **Lucide-React**: Icon library.
+- **UA Parser**: Extracts detailed device and browser information for analytics.  
+- **Recharts**: For creating interactive and visually appealing charts in the analytics dashboard.  
 
 ---
 
@@ -39,8 +54,8 @@ urlsnap is a modern link-shortening application built with React, Tailwind CSS, 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/urlsnap.git
-   cd urlsnap
+   git clone https://github.com/yourusername/snapurl.git
+   cd snapurl
    ```
 
 2. **Install Dependencies**
@@ -60,7 +75,7 @@ urlsnap is a modern link-shortening application built with React, Tailwind CSS, 
    npm run dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app running.
+5. Open [http://localhost:5173](http://localhost:5173) in your browser to see the app running.
 
 ---
 
