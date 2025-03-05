@@ -1,4 +1,4 @@
-# urlsnap - Link Shortener Application
+# SnapURL - Link Shortener Application
 
 ## Overview
 
