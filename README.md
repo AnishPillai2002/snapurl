@@ -1,7 +1,3 @@
-Here's a complete documentation template for the urlsnap link shortener React app:
-
----
-
 # urlsnap - Link Shortener Application
 
 ## Overview
@@ -54,7 +50,7 @@ A modern, feature-rich URL shortener designed to simplify link sharing and track
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/snapurl.git
+   git clone https://github.com/AnishPillai2002/snapurl
    cd snapurl
    ```
 
